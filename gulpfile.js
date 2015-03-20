@@ -64,7 +64,7 @@ gulp.task('build', ['jade', 'less', 'static', 'demo', 'questions']);
 gulp.task('connect', ['build'], function() {
   connect.server({
     root: 'dist',
-    port: 8000,
+    port: 8080,
     livereload: true,
     fallback: "index.html"
   });
